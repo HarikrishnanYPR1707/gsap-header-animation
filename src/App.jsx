@@ -15,13 +15,16 @@ const App = () => {
       // })
 
       timeline
-        // .from("#main-container", {
-        //   top: "50%",
-        //   opacity: 0,
-        //   duration: 1,
-        // })
+        .from("#main-container", {
+          top: "10%",
+          delay: 0.2,
+          opacity: 0,
+          duration: 1,
+        })
         .from("#character", {
-          top: "150%",
+          top: "100%",
+          opacity: 0,
+          delay: -1,
           duration: 1,
           stagger: 0.18,
         });
@@ -37,7 +40,7 @@ const App = () => {
     >
       <div
         id="main-container"
-        className="text-9xl h-[140px] mt-20 relative font-rubikMonoOne w-[761px] overflow-hidden [&>*:nth-child(1)]:left-0 [&>*:nth-child(2)]:left-[109px] [&>*:nth-child(3)]:left-[218px] [&>*:nth-child(4)]:left-[326px] [&>*:nth-child(5)]:left-[435px] [&>*:nth-child(6)]:left-[544px] [&>*:nth-child(7)]:left-[653px]"
+        className="text-9xl h-[140px] mt-20 relative font-rubikMonoOne w-[761px] [&>*:nth-child(1)]:left-0 [&>*:nth-child(2)]:left-[109px] [&>*:nth-child(3)]:left-[218px] [&>*:nth-child(4)]:left-[326px] [&>*:nth-child(5)]:left-[435px] [&>*:nth-child(6)]:left-[544px] [&>*:nth-child(7)]:left-[653px]"
       >
         {"Amazing".split("").map((item, index) => {
           return (
@@ -46,6 +49,9 @@ const App = () => {
             </span>
           );
         })}
+      </div>
+      <div className="absolute text-gray-800 text bottom-4 text-xl font-bold font-spaceGrotesk">
+        Reload to view the animation
       </div>
     </div>
   );
