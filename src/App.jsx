@@ -23,7 +23,7 @@ const App = () => {
         .from("#character", {
           top: "150%",
           duration: 1,
-          stagger: 0.19,
+          stagger: 0.18,
         });
     }, comp);
 
