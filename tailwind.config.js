@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         spaceGrotesk: ["Space Grotesk", "sans-serif"],
+        rubikMonoOne: ["Rubik Mono One", "monospace"],
       },
     },
   },
